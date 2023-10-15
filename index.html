@@ -8,6 +8,28 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
+        <button id="add-book-button">+ Add Book</button>
+
+        <dialog>
+            <form action="./index.html" method="post" id="add-book">
+
+                <label for="title-input">Name of book: </label>
+                <input type="text" name="title" id="title-input" required>
+
+                <label for="author-input">Name of author: </label>
+                <input type="text" name="author" id="author-input" required>
+
+                <label for="page-input">Number of pages: </label>
+                <input type="number" name="pages" id="page-input" min="0" required>
+
+                <label for="read-input">Have you read it? </label>
+                <input type="checkbox" name="read" id="read-input">
+
+
+                <button id="send-book-button">Submit</button>
+
+            </form>
+        </dialog>
         
     </body>
 </html>
